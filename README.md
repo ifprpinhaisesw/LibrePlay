@@ -46,7 +46,7 @@ O projeto Libré Play consiste na criação de um site de streaming de filmes fo
 - **Desenvolvimento**: André Cecato, Érico Meger
 - **Testes e Depuração**: André Cecato, Érico Meger
 
-~~(Trello: [link_trello](link_trello))~~
+(Trello: [link_trello](https://trello.com/b/fU6XA33x/libr%C3%A9play))
 
 ## 5. Conclusão
 ### a. Recursos Utilizados
