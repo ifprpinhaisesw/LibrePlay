@@ -50,8 +50,8 @@ O projeto Libré Play consiste na criação de um site de streaming de filmes fo
 
 ## 5. Conclusão
 ### a. Recursos Utilizados
-- Tecnologias: HTML, CSS, PHP, MySQL
-- 
+- Frontend: HTML, CSS, PHP
+- Backend: Node.JS, Typescript, MySQL
 
 ### b. Resultados esperados com o projeto desenvolvido
 - Aumento da visibilidade e reconhecimento para os filmes independentes brasileiros, proporcionando uma plataforma dedicada para que esses filmes alcancem um público mais amplo e diversificado.
