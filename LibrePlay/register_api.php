@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="login">
-        <form id="registerForm">
+        <form id="registerForm" autocomplete="off">
             <h1>Libre Play</h1>
             <input type="text" id="name" placeholder="Nome" required>
             <input type="email" id="email" placeholder="Email" required>
@@ -53,6 +53,7 @@
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
+                window.location.href = "./login_api.php";
                 // Aqui você pode tratar a resposta da API, como redirecionar o usuário ou mostrar uma mensagem
             })
             .catch((error) => {

@@ -18,3 +18,6 @@ if (isset($_GET['email'])) {
 }
 header("Location: ./index.php")
 ?>
+<script>
+    window.location.href = "./index-api.php";
+</script>

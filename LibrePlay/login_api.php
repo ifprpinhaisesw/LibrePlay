@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="login">
-        <form id="loginForm">
+        <form id="loginForm" autocomplete="off">
             <h1>Libre Play</h1>
             <input type="email" id="email" placeholder="Email" required>
             <br>

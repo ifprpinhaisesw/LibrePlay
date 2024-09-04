@@ -1,9 +1,9 @@
 <?php
-#session_start(); // Inicia a sessão
-#if(!isset($_SESSION["email"])){
-#    header("Location: ./login_api.php");
-#    exit();
-#}
+session_start(); // Inicia a sessão
+if(!isset($_SESSION["email"])){
+    header("Location: ./login_api.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,10 +29,8 @@
 
     <div>
         <div class="section">
-            <h1 class="title" >Top filmes</h1>
             <br>
             <div class="banner-list" id="filmes">
-                    <div class="banner"><a href="./movie.php"><button class="movie-link"></button></a></div>
             </div>
         </div>
     </main>
