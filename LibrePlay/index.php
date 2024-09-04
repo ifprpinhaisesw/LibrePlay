@@ -32,7 +32,7 @@ if(!isset($_SESSION["email"])){
             for ($i = 0; $i < 10; $i++){
         ?>
             <div class="section">
-                <h1 class="title">Top filmes</h1>
+                <h1 class="title" id="filmes">Top filmes</h1>
                 <br>
                 <div class="banner-list">
                 <?php

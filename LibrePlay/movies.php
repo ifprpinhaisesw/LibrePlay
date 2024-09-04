@@ -8,8 +8,9 @@
             //var json = { "filme": { "titulo": "Inception", "ano": 2010 } };
             var json = {}
             var data = {
-                "filme": {} 
+                "filme": {}
             };
+            console.log("Enviando:",JSON.stringify(data))
             fetch('http://localhost:3030/buscar/filme', {
                 method: 'POST',
                 headers: {
@@ -17,30 +18,21 @@
                 },
                 body: JSON.stringify(data)
             })
-            .then(response => json)
+            .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
+                console.log(data);
                 json = data
+                //json = data
+                // Codificar o JSON como uma string
+                const jsonString = JSON.stringify(json);
+                
+                // Codificar a string JSON para uso em URL
+                const encodedJson = encodeURIComponent(jsonString);
+                
+                // Construir a URL com o JSON codificado
+                //window.location.href = "http://localhost/movies2.php?data="+encodedJson;
             })
-            //json = data
-            // Codificar o JSON como uma string
-            const jsonString = JSON.stringify(json);
-            
-            // Codificar a string JSON para uso em URL
-            const encodedJson = encodeURIComponent(jsonString);
-            
-            // Construir a URL com o JSON codificado
-            const url = `http://localhost/movies2.php?data=${encodedJson}`;
-            
-            // Fazer a requisição GET
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    console.log('Resposta do servidor:', data);
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                });
         }
     </script>
 </head>

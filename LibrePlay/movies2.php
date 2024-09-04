@@ -13,7 +13,10 @@ if (isset($_GET['data'])) {
     if (json_last_error() === JSON_ERROR_NONE) {
         echo 'JSON recebido: ';
         print_r($data);
-        $_SESSION["filmes"] = $data;
+        $_SESSION["filmes"] = $data["message"];
+        echo("\nMeus filmes");
+        echo($_SESSION["filmes"]);
+
 
     } else {
         echo 'Erro ao decodificar JSON: ' . json_last_error_msg();
